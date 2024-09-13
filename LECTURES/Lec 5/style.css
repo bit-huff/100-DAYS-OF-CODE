@@ -1,0 +1,16 @@
+th{
+    border: 2px solid black;
+}
+td{
+    border: 1px solid black;
+}
+table{
+    text-align: center;
+    margin: auto;
+
+}
+caption {
+    font-style: oblique;
+    font-family:  'Trebuchet MS', sans-serif;
+font-size: larger;
+}
