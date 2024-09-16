@@ -1,0 +1,13 @@
+.red{
+    color: rgb(255, 230, 0);
+    background-color: rgb(133, 9, 133);
+}
+
+#secondspan{
+    background-color: aquamarine;
+    color: brown;
+}
+
+#firstdiv{
+    background-color: blue;
+}
