@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fafafa;
+    background: url(CITY.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    /* background: #f9f9f9; */
+    background-color: rgba(0, 0, 0, 0.391); /* Light grey with 50% opacity */    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fafafa;
+    background-color: rgba(0, 0, 0, 0.391); /* Light grey with 50% opacity */
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(211, 236, 211); /* Text color */
+    text-shadow: 
+        1px 1px 0 rgb(0, 0, 0), /* Right bottom shadow */
+        -1px -1px 0 rgb(0, 0, 0), /* Left top shadow */
+        1px -1px 0 rgb(0, 0, 0), /* Right top shadow */
+        -1px 1px 0 rgb(0, 0, 0); /* Left bottom shadow */
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+label {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+button {
+    background: #c800ff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background: #0056b3;
+    
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    select {
+        font-size: 1rem;
+    }
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+h1{
+ text-align: center;
+ color: whitesmoke;
+ /* text-shadow:
+         1px 1px 0 #c800ff, /* Right bottom shadow */
+        /* -1px -1px 0 #c800ff, /* Left top shadow */
+        /* 1px -1px 0 #c800ff, Right top shadow */
+        /* -1px 1px 0 #c800ff; Left bottom shadow */ 
+
+}

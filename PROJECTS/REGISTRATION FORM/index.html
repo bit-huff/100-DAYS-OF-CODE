@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form id="registration-form" action="#" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="1234567890">
+            </div>
+        </fieldset>
+
+        <!-- Account Details -->
+        <fieldset>
+            <legend>Account Details</legend>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your Username" minlength="3"
+                    required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8"
+                    required>
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+                    required>
+            </div>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label>Who do you know?</label>
+                <input type="checkbox" id="elvish-yadav" name="public-opinion" value="Elvish Yadav">
+                <label for="elvish-yadav">Elvish Yadav</label>
+                <input type="checkbox" id="dhruv-rathee" name="public-opinion" value="Dhruv Rathee">
+                <label for="dhruv-rathee">Dhruv Rathee</label>
+                <!-- <input type="checkbox" id="both" name="public-opinion" value="both">
+                <label for="both">Both</label> -->
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="in">India</option>
+                </select>
+            </div>
+            <div>
+                <label for="religion">Religion</label>
+                <select id="religion" name="religion" required>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Sikh">Sikh</option>
+                    <option value="Other">Other</option>
+              </select>
+            </div>
+        </fieldset>
+
+    
+
+    <fieldset>
+        <legend>Review</legend>
+        <div>
+            <textarea name="comment" rows="7" cols="78">
+                  Enter your comment here...
+            </textarea>
+        </div>
+    </fieldset>
+
+    
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>
