@@ -1,0 +1,10 @@
+h3{
+    color: brown;
+}
+body{
+    background-color: pink;
+}
+div,p{
+    color: blue;
+    text-decoration: underline;
+}
