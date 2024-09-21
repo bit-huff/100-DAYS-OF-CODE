@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        div{
+            background-color:red;
+        }
+        /* Class Selectors */
+        .green{
+            background-color: green;
+        }
+        /* ID Selectors */
+        #blue{
+            background-color: blue;
+        }
+        /* Universal Selectors */
+        *{
+            text-align: center;
+            color: yellow;
+        }
+        /* Child Selectors */
+        div > p{
+            color: black;
+            background-color: pink;
+        }
+        /* Descendant Selectors */
+        div p{
+            color:aqua;
+            background-color: rgb(108, 1, 108);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I'm a Div.
+    </div>
+    <div class="green">
+        I'm also a div but with green class!
+    </div>
+    <div id="blue">
+        I'm also a div but with blue ID!
+    </div>
+    <div>
+        I have a paragraph inside me!
+        <p>
+            I'm the paragragh inside the div and I'm considered as div child!
+            But I'm also consider as a descendant of div!
+        </p>
+    </div>
+
+    <div>
+        I have a article tag!
+        <article>
+            I have a span tag!
+            <span>
+                I have a paragraph tag!
+                <p>
+                    I'm descendant of div!
+                    But I'm not consider as a child of div!
+                </p>
+            </span>
+        </article>
+    </div>
+</body>
+</html>
