@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+h2{
+    text-align: justify;
+}
+    .center{
+        text-align: right;
+    }
+    #h2{
+        text-align: left;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Here you can see that I use all type selectors in style tag but inline style applied to the code, because of Specificity score! -->
+    <h2 class="center" id="h2" style="text-align: center;"><u>
+        CSS Specificity
+    </u>
+    </h2>
+     <h4>There is a list based on Specificity of selectors!</h4>
+     <ul>
+        <li>Inline Stles: 1000 points</li>
+        <li>ID Selectors: 100 points</li>
+        <li>Class/Attributes/Pseudo Class Selectors: 10 points <br>
+            (In case of two or more than two classes algorithm apply by considering position and order of appearance!)
+        </li>
+        <li>Element Selectors:1 points</li>
+        <li>Universal Selectors:0 points</li>
+
+     </ul>
+
+     <h4>Note: !important rule has the highest Specificity (10,000 points)</h4>
+     <xml>
+        p {
+            color:red; !important
+        } <br>
+        p {
+            color:blue;
+        }
+     </xml>
+</body>
+</html>
