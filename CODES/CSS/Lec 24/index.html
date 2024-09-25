@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADOWS & OUTLINES</title>
+    <style>
+        .box {
+            padding: 34px;
+            margin: 20px;
+            box-shadow: 5px 5px 3px rgb(127, 121, 121);
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        .h2{
+            border: 2px solid green;
+            border-radius: 15px;
+            /* Outline space doesn't include in box model space */
+            outline: 3px solid red;
+            outline-offset: 4px;
+        }
+        .text-shadow{
+            text-shadow: 4px 2px 3px rgb(252, 7, 170);
+            border-radius: 12px;
+            padding: 10px;
+            outline: 3px solid rgb(252, 7, 170);
+            border: 3px solid rgb(0, 0, 0);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Im a box!
+    </div>
+    <div class="h2">
+        <h2>Im here for comparison of BORDER and OUTLINES!</h2>
+    </div>
+    <p class="text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestias sunt amet minima sit, rerum ipsa nesciunt cum quod officiis aperiam, laborum consectetur culpa, quae saepe? Iure labore asperiores alias suscipit beatae ipsa dolor.</p>
+</body>
+
+</html> 
