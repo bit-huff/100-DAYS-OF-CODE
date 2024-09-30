@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <style>
+        h3{
+            text-decoration: underline;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: rgb(57, 247, 36);
+            color: rgb(0, 255, 21);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Overflow Property
+    </h1>
+    <p>
+        The CSS overflow property controls what happens to content that overlows the bound of an element. It applies to block-level elements  like dev, section or any other element with a defined size.
+    </p>
+
+    <p><b><u>
+        There are four main values for the overflow property:-
+    </u></b></p>
+
+    <h3>
+        1.Visible (Default)
+
+    </h3>
+    <p>
+        The content is not clipped and can overflow the elements box. The overflowing content will be visible outside of the element.
+    </p>
+    <xml> <pre>
+        div {
+            overflow:visible;
+        }</pre>
+    </xml>
+
+    <h3>
+        2. Hidden
+    </h3>
+    <p>
+        The content is clipped, it means any content that overflow the elements box will be hidden and not visible.
+    </p>
+    <xml>
+        <pre>
+            div {
+                overflow:hidden;
+            }
+        </pre>
+    </xml>
+    <h3>
+        3. Scroll
+    </h3>
+    <p>
+        The content is clipped, but a scrollbar is added to allow users to scroll through the content even if it overflows.
+    </p>
+    <xml>
+        <pre>
+            div {
+                overflow:scroll;
+            }
+        </pre>
+    </xml>
+    <h3>
+        4. Auto
+    </h3>
+    <p>
+        IF the content overflows the elements box, a scrollbar is automatically added. If the content fits within the element, no scrollbar is appears.
+    </p>
+    <xml>
+        <pre>
+            div {
+                overflow:auto;
+            }
+        </pre>
+    </xml>
+
+    <p> <u>
+        Additionally, you can control overflow on the horizontal and vertical axex seperately using overflow-x and overflow-y.
+    </u> </p>
+    <ul>
+        <li>Overflow-x: 
+            Control the overflow in the horizontal direction (left to right) 
+
+        </li>
+        <li>overflow-y: Control the overflow in the vertical direction (top to bottom)</li>
+
+    </ul>
+    <xml>
+        <pre>
+For eg:            div  {
+                         overflow-x:hidden;
+                         overflow-y:auto;
+                        }
+        </pre>
+    </xml>
+    <p>It hides horizontal overflow but allow vertical scrolling if the content exceeds the container's height.</p>
+</body>
+</html>
