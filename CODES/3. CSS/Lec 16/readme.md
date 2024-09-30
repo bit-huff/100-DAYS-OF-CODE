@@ -1,2 +1,2 @@
 # Nothing Special
-In this lecture,he just give the source code of Lecture 12 for other students!!
+In this lecture,I just give the solution of Lecture 12's Quiz!!

@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Styling Lists"</title>
     <style>
-        
+        h3 {
+            font-weight: 800;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding: 3.5px;
+            outline: 2px solid black;
+            border: none;
+            border-radius: 5px;
+            margin: none;
+        }
+        ol{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        ol li::marker {
+            color: red;
+        }
+
+        ol li {
+            font-style: italic;
+            text-decoration: underline;
+            list-style-position: inside;
+            text-decoration-color: 2px solid rgb(19, 21, 8);
+        }
+
+        ol p {}
+
+        ul li {
+            border: 2px solid black;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .info {
+            border: 2px solid black;
+            padding: 2px;
+            border-radius: 5px;
+            font-size: 18px;
+
+        }
     </style>
 </head>
+
 <body>
-    
+    <h1>Navigation Bar</h1>
+    <h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </h2>
+ <hr>
+    <p class="info">
+        You can customize the appearance of lists using various CSS Properties. Lists can be ordered of &lt;ol&gt; or
+        unnordered &lt;ul&gt; , and with CSS, you can control how they look.
+    </p>
+
+    <ol>
+        <li>List style Type:
+        </li>
+        <p>
+            The list type property defines the type of marker (Bullet or Number)
+            for the list items.
+        </p>
+        <xml>
+            <pre>
+ul                                          ol
+    {                                           {
+        list-style-type:circle;                  list-style-type:decimal;
+    }                                           }</pre>
+        </xml>
+        <br>
+        <li>
+            Custom List Marker:
+        </li>
+        <p>Use images or cutsom icons as list markers by using list-style-image!</p>
+        <xml>
+            <pre>
+ol
+    {
+        list-style-image:URL('PATH/TO/YOUR-IMAGE.png')
+    }
+
+             </pre>
+        </xml>
+        <li>Removing List Marker</li>
+        <p>To remove default bullets or numbers.</p>
+        <xml>
+            <pre>
+ul, ol 
+        {
+            list-style-type:none;
+        }
+
+
+</pre>
+        </xml>
+        <li>Horizontal Lists</li>
+        <p>By default, list markers inhertit the text color. If you want to style the marker color independently use the
+            ::marker pseudo element.</p>
+        <xml>
+            <pre>
+ul li::marker
+                {
+                    color:red;
+                }
+
+</pre>
+        </xml>
+
+
+    </ol>
+<hr>
+
+
 </body>
+
 </html>
