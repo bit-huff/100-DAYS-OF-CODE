@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+    <style>
+        .box{
+            /* border: 2px solid blue;
+            border-radius: 10px; */
+            display: flex;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body{
+                background-color: red;
+
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            .box1{
+                color:aquamarine;
+                border-radius: 15px;
+            
+            }
+            .box2{
+                color:aquamarine;
+                border-radius: 15px;
+
+            }
+            .box3{
+                color:aquamarine;
+                border-radius: 15px;
+
+            }
+        }
+        .box1{
+           border: 2px solid black; 
+           width: 344px;
+           height: 344px;
+           margin: 10px;
+        }
+        
+        .box2{
+            border: 2px solid black; 
+            margin: 10px;
+            width: 344px;
+            height: 344px;
+        }
+        
+        .box3{
+            border: 2px solid black; 
+            margin: 10px;
+           width: 344px;
+           height: 344px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
