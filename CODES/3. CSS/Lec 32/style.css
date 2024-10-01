@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div form {
+    text-align: center;
+}
+
+.box {
+    border: 2px solid grey;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+img {
+    text-align: center;
+    border: 2px solid grey;
+    margin: 4%;
+    border-radius: 10px;
+}
+
+span {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.nature {
+    margin-left: 45px;
+    padding: 5px 20px ;
+    border: 1px solid grey;
+    color: grey;
+    font-weight: 800;
+}
+
+.lake {
+    
+    font-weight: 800;
+    color: grey;
+    border: 1px solid grey;
+    margin-left: 100px;
+    padding: 5px 20px ;
+}
+
+h2 {
+    margin: 45px;
+}
+
+.discuss {
+    font-size: larger;
+    margin: 45px;
+    color: grey;
+    text-shadow: 2px 0px 2px rgb(92, 217, 255);
+}
+
+.button {
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 28px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: rgb(0, 127, 253);
+    font-size: larger;
+    background-color: rgba(0, 251, 255, 0.25);
+    margin-bottom: 3%;
+}
