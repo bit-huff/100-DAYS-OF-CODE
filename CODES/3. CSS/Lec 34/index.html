@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .clearimg{
+            float: right;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .floatimg{
+            float: left;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .h1main{
+            font-weight: bolder;
+            text-decoration: underline;
+            text-align: center;
+        }
+        
+        .mainbox{
+            width: 60vw;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        p{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="floatbox">
+
+            <h1 class="h1main">Float and Clear</h1>
+            <img class="floatimg" src="float.png" alt="float" width="50px" >
+            <h1>Float:</h1>
+            <p class="floatpara">The float property in CSS is used to position elements to the left or right of their container, allowing text and inline elements to wrap around them.</p>
+            <ul>
+                <li>left:Floats the elements to the left of its container.</li>
+                <li>right:Floats the elements to the right of its container.</li>
+                <li>none:THe element does not float.</li>
+                <li>inherit:Inhertis the float property from its parent.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="clearbox">
+            <img class="clearimg" src="clear.png" alt="clear" width="50px">
+            <h1 class="h1clear">Clear:</h1>
+            <p class="clearpara">The clear property is used to control the behavior of floating elements. 
+                It specify whether an element should be moved below(clear) any floated elements to the left, right or both.
+            </p>
+            <ul>
+                <li>left: No floating elements allowed on the left.</li>
+                <li>right: No floating elements allowed on the right.</li>
+                <li>both: No floating elements allowed on the either side.</li>
+                <li>none: No clearing occurs</li>
+            </ul>
+        </div>
+        <hr>
+        <footer>
+            <h1>Common Use-case:</h1>
+            <p>Float and clear often used together when working with layouts, especially when dealing with images, text-wrapping and ensuring that elements like footers remain properly positioned.</p>
+        </footer>
+    </div>
+</body>
+</html>

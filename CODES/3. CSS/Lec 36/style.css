@@ -18,8 +18,8 @@ ul {
 ul li {
     list-style-type: none;
     padding: var(--defpad);
-    margin: var(--defmar);
     border: 2px solid var(--bordercolor);
+    margin: var(--defmar);
     border-radius: var(--borderrad)
 }
 ul li:first-child{
@@ -36,15 +36,12 @@ ul li:nth-child(3){
     background-color: var(--color);
 }
 
-
+ul li a{
+    text-decoration: none;
+    color:black;
+}
 .nav {
     background-color: var(--navcolor, lightpink);
     border: 3px solid var(--bordercolor);
-    border-radius: var(--borderrad);
-}
-
-.container {
-    background-color: var(--seccolor);
-    border: 1px solid var(--color);
     border-radius: var(--borderrad);
 }
