@@ -1,0 +1,150 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+h2 {
+    font-variant: small-caps;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 15px 5px 10px 5px;
+}
+
+.items {
+    width: 25px;
+    height: 25px;
+    border: 2px solid blueviolet;
+    margin: 5px;
+}
+
+.flexdir {
+    display: flex;
+}
+
+.juscon {
+    display: flex;
+    justify-content: center;
+}
+
+.aliite {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alicon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.flewra {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fleflo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gap {
+    display: flex;
+    gap: 2px 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* Margin bottom and left are not needed */
+    flex-wrap: wrap;
+}
+
+.gapitem {
+    width: 25px;
+    height: 25px;
+    border: 2px solid blueviolet;
+}
+
+img {
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.axis {
+    display: flex;
+    justify-content: center;
+}
+
+.axiscont {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* ITEMS PROPERTIES */
+.order {
+    display: flex;
+    justify-content: center;
+}
+
+.item1 {
+    order: 4;
+}
+
+.item2 {
+    order: 5;
+}
+
+.item3 {
+    order: 1;
+}
+
+.item4 {
+    order: 3;
+}
+
+.item5 {
+    order: 2;
+}
+
+.flegro {
+    display: flex;
+    justify-content: center;
+}
+
+.groitem {
+    flex-grow: 1;
+}
+
+.groitem1 {
+    flex-grow: 2;
+}
+
+.fleshr {
+    display: flex;
+    justify-content: center;
+}
+
+.shritem {
+    flex-shrink: 1;
+}
+
+.shritem1 {
+    flex-shrink: 2;
+}
+
+.self{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selitem1{
+    align-self: flex-start;
+}
+.selitem2{
+    align-self: flex-end;
+}

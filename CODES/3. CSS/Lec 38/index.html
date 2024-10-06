@@ -1,14 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
-    <style>
-        
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    
+    <h1>CSS FLEXBOX</h1>
+    <h2>Container Properties</h2>
+    <!-- FLEX DIRECTION -->
+    <div class="box">
+        <h4>Flex Direction</h4>
+        <p>
+            Defines the direction flex items are placed in the flex container. <br>
+            values: 'row,row-reverse,column,column-reverse' <br>
+            <u>ex.</u>
+        </p>
+        <div class="flexdir">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+        </div>
+    </div>
+    <!-- JUSTIFY CONTENT  -->
+    <div class="box">
+        <h4>Justify Content</h4>
+        <p>Align flex items along the main-axis. <br>
+            values: 'flex-start, flex-end, center, space-around, space-between' <br>
+            <u>ex.</u>
+        </p>
+        <div class="juscon">
+            <div class="items">A</div>
+            <div class="items">B</div>
+            <div class="items">C</div>
+            <div class="items">D</div>
+            <div class="items">E</div>
+        </div>
+    </div>
+    <!-- ALIGN ITEMS  -->
+    <div class="box">
+        <h4>Align Items</h4>
+        <p>Align flex items along the cross-axix.
+            <br> values: 'flex-start, flex-end, center, baseline, stretch'
+            <br><u>ex.</u>
+        </p>
+        <div class="aliite">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+        </div>
+    </div>
+    <!-- ALIGN CONTENT  -->
+    <div class="box">
+        <h4>Align Content</h4>
+        <p>
+            Aligns flex lines in the flex container when there is extra space on the cross-axix. <br>
+            values: 'flex-start, flex-end, center, space-between, space-around, stretch'
+            <br><u>ex.</u>
+        </p>
+        <div class="alicon">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </div>
+    <!-- FLEX WRAP  -->
+    <div class="box">
+        <h4>Flex Wrap</h4>
+        <p>Controls whether flex items should wrap onto multiple lines. <br>
+            values: 'nowrap(default), wrap, wrap-reverse'
+            <br> <u>
+                ex.
+            </u>
+        </p>
+        <div class="flewra">
+
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </div>
+    <!-- FLEX FLOW  -->
+    <div class="box">
+        <h4>Flex Flow</h4>
+        <p>A shorthand property for flex-direction and flex-wrap. <br>
+            <u>ex.</u>
+        </p>
+        <div class="fleflo">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </div>
+    <!-- GAP  -->
+    <div class="box">
+        <h4>Gap</h4>
+        <p>Defines the spacing between flex items. <br>
+            so we don't margin for items. <br>
+            <u>ex.</u>
+        </p>
+        <div class="gap">
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+            <div class="gapitem"></div>
+
+        </div>
+    </div>
+    <!-- MAIN & CROSS AXIS  -->
+    <div class="box">
+
+        <div class="axixcont">
+            <h4>Flex Axis</h4>
+            <ul>
+                <li><u>Main Axis:</u>
+                    The primary axis along which the flex items are laid out. <br>
+                    If the flex-direction is row, main-axis runs horizontally; if column, it runs vertically.
+                </li>
+                <li><u>Cross Axis:</u>
+                    The axix perpendicular to the main-axis.
+                </li>
+            </ul>
+        </div>
+        <div class="axis">
+
+            <img src="flexbox.JPG" alt="main and cross axis diagram" height="344px">
+        </div>
+    </div>
+    <h2>Items Properties</h2>
+    <!-- ORDER  -->
+    <div class="box">
+        <h4>Order</h4>
+        <p>Controls the order in which flex items appear in the flex container.
+            <br>
+            default order: 0, (Lower values appear first) <br>
+            <u>ex.</u>
+        </p>
+        <div class="order">
+            <div class="items item1 ">1</div>
+            <div class="items item2 ">2</div>
+            <div class="items item3 ">3</div>
+            <div class="items item4 ">4</div>
+            <div class="items item5 ">5</div>
+        </div>
+    </div>
+    <!-- FLEX GROW  -->
+    <div class="box">
+        <h4>Flex Grow</h4>
+        <p>Controls how much a flex item can grow relative to other items.
+            <br> default value: 0, (no growth)
+            <br> <u>ex.</u>
+        </p>
+        <div class="flegro">
+            <div class="items groitem "></div>
+            <div class="items groitem"></div>
+            <div class="items groitem1"></div>
+            <div class="items groitem"></div>
+            <div class="items groitem"></div>
+        </div>
+    </div>
+    <!-- FLEX SHRINK -->
+    <div class="box">
+        <h4>Flex Shrink</h4>
+        <p>Controls how much a flex item can shrink relative to other items.
+            <br> <u>ex.</u>
+        </p>
+        <div class="fleshr">
+            <div class="items shritem "></div>
+            <div class="items shritem"></div>
+            <div class="items shritem1"></div>
+            <div class="items shritem"></div>
+            <div class="items shritem"></div>
+        </div>
+    </div>
+    <!-- ALIGN SELF -->
+    <div class="box">
+        <h4>Align Self</h4>
+        <p>Allows the default alignment (set by align-items)
+            to be overridden for a specific flex item. <br>
+            <u>ex.</u>
+        </p>
+        <div class="self">
+            <div class="items selitem"></div>
+            <div class="items selitem1"></div>
+            <div class="items selitem"></div>
+            <div class="items selitem2"></div>
+            <div class="items selitem"></div>
+            <div class="items selitem1"></div>
+            <div class="items selitem"></div>
+            <div class="items selitem2"></div>
+        </div>
+    </div>
 </body>
 </html>

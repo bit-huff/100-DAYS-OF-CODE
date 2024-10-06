@@ -6,9 +6,64 @@
     <title>CSS Grid</title>
     <style>
         
+        .container{
+            display: grid;
+            border: 2px solid red;
+            gap: 15px 5px;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-rows: 100px 100px; */
+            height: 100vh;
+            justify-items: center;
+            align-items: center;
+            place-content: center;
+            /* justify-content: center;
+            align-content: center; */
+        }
+        .item{
+            border: 2px solid blueviolet;
+            /* width: 55px; */
+            height: 55px;
+            border-radius: 5px;
+        }
+        .item-4{
+            justify-self: start;
+            align-self: end;
+        }
+        .item-6{
+            justify-self: end;
+            align-self: flex-start;
+        }
+        .footer{
+            display: grid;
+            border: 2px solid blue;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 15px;
+            margin-top: 50px;
+        }
+        .footeritems{
+            width: 15px;
+            height: 15px;
+            border: 2px solid red;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">dabba1 </div>
+        <div class="item">dabba2 </div>
+        <div class="item">dabba3 </div>
+        <div class="item item-4">dabba4 </div>
+        <div class="item">dabba5 </div>
+        <div class="item item-6">dabba6 </div>
+    </div>
+    <div class="footer">
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+        <div class="footeritems"></div>
+    </div>
 </body>
 </html>

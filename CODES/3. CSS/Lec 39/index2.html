@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+body{
+    background-color: black;
+}
+        .container {
+            display: grid;
+            gap: 15px;
+            border: 2px solid black;
+            grid-template-areas: "header header"
+                "sidebar content"
+                "footer footer ";
+            width: 100vw;
+
+        }
+
+        .item {
+            border: 2px solid blue;
+            height: 75px;
+            /* width: 75px; */
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            font-size: 50px;
+            background-color: aquamarine;
+            border-radius: 10px 250px 10px 250px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            height: 560px;
+            width: 20vw;
+            text-align: center;
+            font-size: 50px;
+            background-color: lightcoral;
+            border-radius: 10px 50px 10px 50px;
+
+        }
+
+        .content {
+            grid-area: content;
+            height: 560px;
+            width: 80vw;
+            border-radius: 10px 250px 10px 250px;
+
+            text-align: center;
+            font-size: 50px;
+        background-color: lightgreen;
+        }
+
+        .footer {
+            grid-area: footer;
+            text-align: center;
+            border-radius: 10px 250px 10px 250px;
+
+            font-size: 50px;
+            background-color: rgb(215, 236, 108);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">HEADER</div>
+        <div class="item sidebar">SIDEBAR</div>
+        <div class="item content">CONTENT</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+
+</html>
