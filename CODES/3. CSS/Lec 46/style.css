@@ -1,0 +1,155 @@
+body{
+    background-color: lightcoral;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+pre{
+    border: 2px solid aqua;
+}
+.gmti h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.base{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 60vh auto 0 auto ;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(34, 255, 0);
+    height: 3vh;
+    background-color: black;
+}
+
+.container{
+    width: 90vw;
+    height: 64vh;
+    border: 2px solid red;
+}
+
+.ballup{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: ballup 5s linear 0.3s infinite normal forwards;
+    margin: -8.4vh auto 0 auto ;
+    width: 1rem;
+    height: 1rem;
+    /* border: 2px solid grey; */
+    border-radius: 50%;
+    background-color:grey;
+}
+
+@keyframes ballup {
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translate3d(10em, -10em, 0rem);
+        
+    }
+    
+    99.9%{
+        background-color: grey;
+
+    }
+    100%{
+        transform: translateY(-10rem);
+        background-color: rgba(250, 235, 215, 0);
+    }
+}
+
+
+
+
+.balldown{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: balldown 5s linear 5.3s infinite normal forwards;
+    margin: -11.4vh auto 0 auto ;
+    width: 1rem;
+    height: 1rem;
+    /* border: 2px solid grey; */
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0);
+}
+@keyframes balldown {
+    0%{
+        transform: translateY(-10rem);
+        background-color:rgb(128, 128, 128);
+    }
+    50%{
+        transform: translate3d(-10em, -10em, 0rem);
+        
+    }
+    99.9%{
+        background-color:grey;
+
+    }
+    100%{
+        transform: translateY(0rem);
+        background-color: rgb(128, 128, 128);
+    }
+}
+.ball3{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: ball3 5s linear 12.8s infinite normal forwards;
+    margin: -11.4vh auto 0 auto ;
+    width: 1rem;
+    height: 1rem;
+    /* border: 2px solid grey; */
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0);
+}
+@keyframes ball3 {
+    0%{
+        transform: translateY(-10rem);
+        background-color:rgb(1, 175, 255);
+    }
+    50%{
+        transform: translate3d(-10em, -10em, 0rem);
+        
+    }
+    99.9%{
+        background-color:rgb(1, 175, 255);
+
+    }
+    100%{
+        transform: translateY(0rem);
+        background-color: rgb(1, 175, 255);
+    }
+}
+
+.ball4{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: ball4 5s linear 17.8s infinite normal forwards;
+    margin: -11.4vh auto 0 auto ;
+    width: 1rem;
+    height: 1rem;
+    /* border: 2px solid grey; */
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0);
+}
+@keyframes ball4 {
+    0%{
+        transform: translateY(0rem);
+        background-color:rgb(1, 175, 255);
+    }
+    50%{
+        transform: translate3d(10em, -10em, 0rem);
+        
+    }
+    99.9%{
+        background-color:rgb(1, 175, 255);
+
+    }
+    100%{
+        transform: translateY(-10rem);
+        background-color: rgb(1, 175, 255);
+    }
+}

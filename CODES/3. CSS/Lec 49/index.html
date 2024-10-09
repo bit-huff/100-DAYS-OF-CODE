@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit and Object-Cover</title>
+    <style> h1{
+        text-align: center;
+    }
+
+        body{
+            background-image: url(SKY.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .container{
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid yellow;
+
+        }
+        .container div{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        .box1 img{
+            width: 344px;
+            height: 455px;
+            border: 2px solid red;
+            object-fit: fill;
+        }
+        .box2 img{
+            width: 344px;
+            height: 455px;
+            border: 2px solid red;
+            object-fit: contain;
+        }
+        .box3 img{
+            width: 344px;
+            height: 455px;
+            border: 2px solid red;
+            object-fit: cover;
+            object-position: top right;
+        }
+        .box4 img{
+            width: 344px;
+            height: 455px;
+            border: 2px solid red;
+            object-fit: none;
+
+        }
+        .box5 img{
+            width: 344px;
+            height: 455px;
+            border: 2px solid red;
+            object-fit: scale-down;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Object-Fit & Object-Cover   </h1>
+        
+        <div class="container">
+            <div class="box1">
+                <img src="GIRL.jpg" alt="girl"> <br> FILL
+            </div>
+            <div class="box2">
+                <img src="GIRL.jpg" alt="girl"> <br> CONTAIN
+            </div>
+            <div class="box3">
+                <img src="GIRL.jpg" alt="girl"> <br> COVER with "Top right position property"
+            </div>
+            <div class="box4">
+                <img src="GIRL.jpg" alt="girl"> <br> NONE
+            </div>
+            <div class="box5">
+                <img src="GIRL.jpg" alt="girl"> <br> SCALE-DOWN
+            </div>
+        </div>
+</body>
+</html>

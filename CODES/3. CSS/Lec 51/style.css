@@ -1,0 +1,39 @@
+.container{
+    border: 2px solid black;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 234, 255, 0.542);
+    position: relative;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(130, 130, 130);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;     */
+    animation: bounceY 2s ease-out infinite alternate, bounceX 5s linear infinite alternate;
+
+}
+
+@keyframes bounceX {
+from{ left: 0;
+}
+
+to{
+ left: 96%;
+}
+}
+
+@keyframes bounceY {
+    from{
+        bottom: 0;
+    }
+   
+    to{
+    bottom: 90%;
+    }
+}

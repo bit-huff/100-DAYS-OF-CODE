@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .box1 img {
+            width: 344px;
+            height: auto;
+            filter: blur(0.9px);
+        }
+
+        .box2 img {
+            width: 344px;
+            height: auto;
+            filter: brightness(0.8);
+        }
+
+        .box3 img {
+            width: 344px;
+            height: auto;
+            filter: contrast(150%);
+        }
+
+        .box4 img {
+            width: 344px;
+            height: auto;
+            filter: grayscale(100%);
+        }
+
+        .box5 img {
+            width: 344px;
+            height: auto;
+            filter: hue-rotate(90deg);
+
+        }
+
+        .box6 img {
+            width: 344px;
+            height: auto;
+            filter: sepia(100%);
+        }
+
+        .box7 img {
+            width: 344px;
+            height: auto;
+            filter: invert(100%);
+        }
+
+        .box8 img {
+            width: 344px;
+            height: auto;
+            filter: opacity(0.5);
+        }
+
+        .box9 img {
+            width: 344px;
+            height: auto;
+            filter: saturate(200%);
+        }
+
+        .box10 img {
+            width: 344px;
+            height: auto;
+            filter: drop-shadow(10px 10px 5px black);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        CSS Filters
+
+    </h2>
+    <p>
+        CSS filters are graphical effects applied to elements such as images, backgrounds, and videos. They allow you to
+        manipulate elements by changing their appearance in ways like adjusting color, blurring, or enhancing contrast.
+    </p>
+    <p><b><u>Here are the most commonly used CSS filter functions:</u></b></p>
+
+    <div class="container">
+        <div class="box1"><img src="car.jpg" alt="">
+            Blur</div>
+        <div class="box2"> <img src="car.jpg" alt="">
+            Brightness</div>
+        <div class="box3"> <img src="car.jpg" alt="">
+            Contrast</div>
+        <div class="box4"> <img src="car.jpg" alt="">
+            Grayscale</div>
+        <div class="box5"> <img src="car.jpg" alt="">
+            Hue-rotate</div>
+        <div class="box6"> <img src="car.jpg" alt="">
+            Sepia</div>
+        <div class="box7"> <img src="car.jpg" alt="">
+            Invert</div>
+        <div class="box8"> <img src="car.jpg" alt="">
+            Opacity</div>
+        <div class="box9"> <img src="car.jpg" alt="">
+            Saturate</div>
+        <div class="box10"> <img src="car.jpg" alt="">
+            Drop-shadow</div>
+    </div>
+</body>
+
+</html>

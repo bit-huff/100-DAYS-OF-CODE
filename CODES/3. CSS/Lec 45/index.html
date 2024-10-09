@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .shorthand{
+            /* transition: property duration timing-function delay; */
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .longhand{
+            /* transition: property duration timing-function delay; */
+            transition: all 3s ease-in-out 1s;
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            display: flex;
+            margin: 15vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxA{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            color: black;
+        }
+        .boxA:hover{
+            transform: scale(1.1,1.1);
+            cursor: pointer;
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        .boxB{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            color: black;
+        }
+        .boxB:hover{
+            transform: scale(1.1,1.1);
+            cursor: pointer;
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="shorthand">
+        <div class="boxA">
+            Box "A"
+        </div>
+    </div>
+<body>
+    <div class="longhand">
+        <div class="boxB">
+            Box "B"
+        </div>
+    </div>
+</body>
+</html>

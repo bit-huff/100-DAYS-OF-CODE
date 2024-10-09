@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1> CSS ANIMATION PROPERTY</h1>
+
+    <p>The CSS animation property is used to animate elements by applying a sequence of keyframes, which define how the
+        element's styles change at different points during the animation. Unlike the transition property, which only
+        animates between two states, the animation property allows you to create more complex sequences with multiple
+        steps and finer control over the timing, direction, and repetition.
+        <br>
+        <br>
+        <u>Syntax:- </u>
+    </p>
+    <pre>
+
+        <xml>
+            element {
+                animation: name duration timing-function delay iteraction-count direction fill-mode;
+            }
+        </xml>
+    </pre>
+
+    <h2>
+        Components of Animation
+    </h2>
+
+    <ul>
+        <li> <b><u>name:</u></b> The name of the @keyframes at-rule that defines the animation. It connects the keyframes to
+            the element's animation.</li>
+        <li><b><u>duration:</u></b>Specifies how long one cycle of the animation should take. It can be defined in seconds (s)
+            or milliseconds (ms).</li>
+        <li><b><u>timing-function:</u></b> Specifies the speed curve of the animation. Common values are the same as with
+            transition: ease, linear, ease-in, ease-out, ease-in-out, or custom curves using cubic-bezier().</li>
+        <li><b><u>delay:</u></b> Defines a delay before the animation starts, in seconds or milliseconds.</li>
+        <li><u><b>iteration-count:</b></u> Defines how many times the animation should repeat. Common values:
+            <ul>
+                <li>
+                    infinite to make the animation loop forever.
+                </li>
+                <li>
+                    A specific number (e.g., 3 for three repetitions).
+                </li>
+            </ul>
+        <li><b><u>direction:</u></b> Specifies the direction of the animation. Possible values:
+            <ul>
+                <li>
+
+                    <u>normal (default):</u> The animation plays forward.
+                </li>
+                <li>
+
+                    <u>reverse:</u> The animation plays backward.
+                </li>
+                <li>
+
+                    <u>alternate:</u> The animation alternates between playing forward and backward.
+                </li>
+                <li>
+
+
+                    <u>alternate-reverse:</u> Alternates, starting with playing backward.
+                </li>
+            </ul>
+        </li>
+        <li><b><u>fill-mode:</u></b> Defines what styles are applied before and after the animation. Common values:
+            <ul>
+                <li>
+
+                    <u>none (default):</u> No styles are retained after the animation ends.
+                </li>
+                <li>
+
+                    <u>forwards:</u> The element will keep the styles from the last keyframe (after the animation ends).
+                </li>
+                <li>
+
+                    <u>backwards:</u> The element will apply styles from the first keyframe during the delay period.
+                </li>
+                <li>
+
+                    <u>both:</u> Combines the effects of forwards and backwards.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>
+        Example of @keyframes and animation
+    </h2>
+    <pre>
+
+        <xml>
+            @keyframes slide {
+                0% {
+                    transform: translateX(0);
+                    background-color: red;
+                }
+                50% {
+                    transform: translateX(100px);
+                    background-color: yellow;
+                }
+                100% {
+                    transform: translateX(200px);
+                    background-color: green;
+                }
+            }
+            
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation: slide 4s ease-in-out infinite;
+            }
+        </xml>
+    </pre>
+    <h3>In this example:</h3>
+    <pre>
+        The @keyframes rule defines how the element should move and change color from 0% (start) 
+        to 100% (end).
+        The div element will move from left to right over 4 seconds, 
+        changing its background color along the way.
+        The animation loops infinitely due to infinite.
+    </pre>
+    <div class="gmti">
+        <h2>Ball Multiplier</h2>
+    </div>
+    <div class="container">
+        <div class="base">
+            <div class="ballup">
+                
+            </div>
+            <div class="balldown">
+                
+            </div>
+            <div class="ball3">
+
+            </div>
+            <div class="ball4">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
